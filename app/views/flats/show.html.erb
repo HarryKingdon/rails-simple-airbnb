@@ -1,0 +1,8 @@
+<%= @flat.name %>
+<%= @flat.description %>
+<%= @flat.number_of_guests %>
+<%= @flat.price_per_night %>
+<%= @flat.address %>
+
+<%= render "form"  %>
+<%= link_to "Delete this flat", flat_path(@flat[:id]), method: :delete %>
